@@ -1,0 +1,20 @@
+{
+  "name": "pug-styl-simple",
+  "version": "1.0.0",
+  "description": "static pug & styl render and build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pug",
+    "stylus"
+  ],
+  "author": "nanari",
+  "license": "ISC",
+  "devDependencies": {
+    "ncp": "^2.0.0",
+    "pug": "^3.0.2",
+    "stylus": "^0.55.0"
+  }
+}

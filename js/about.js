@@ -1,0 +1,1 @@
+document.getElementById('twemoji').src = "/img/1f970.svg"
