@@ -15,7 +15,7 @@ let stylDirList = ['./css']
 // 仅拷贝的资源列表（相对，可递归）
 let onlyCopyList = ['./js', './img']
 // 可额外增加的初始列表（相对）
-let pugFileList = ['./index.pug']
+let pugFileList = ['./index.pug','./404.pug']
 let stylFileList = []
 
 
