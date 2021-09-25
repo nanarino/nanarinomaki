@@ -37,7 +37,7 @@ include pug 无需在build时编译文件
 
 当html文件不存在的时候会重定向为pug，css同理
 
-可以直接在代码里使用.html和.styl （include除外）
+可以直接在代码里使用.html和.css （include除外）
 
 
 
