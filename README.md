@@ -1,51 +1,68 @@
-# Maki:pug-styl-simple
+# Maki-ki by nanari
 
-简易的原始人工具
+简易的website打包工具
 
 
 
-## /watch.mjs
+## Scripts
+
+### watch
+
+```bash
+npm run watch
+```
 
 提供httpserver并临时编译与html和css同名的pug和styl
 
+### build
 
-
-## /build.js
+```bash
+npm run build
+```
 
 提供编译以及替换后缀并可配置的拷贝到目标目录
 
 
 
-## 依赖
+## DI
 
-- nodejs14+
-- ncp  pug  stylus
+Renderer，Builder，Watcher，都支持依赖注入。
+
+其中，Renderer容器默认是StylRenderer和PugRenderer。
+
+除此之外还实现了LessRenderer 。
+
+如果要实现其他的Renderer，需要实现renderInterface接口。
+
+```typescript
+interface renderInterface {
+    ext: string
+    render: (arg: string) => Promise<string>
+}
+```
+
+### override
+
+如果要用LessRenderer覆盖默认的StylRenderer
+
+这需要在resolve之前
+
+```typescript
+Containers.override('CSS', LessRenderer)
+Containers.CSS.resolve(Renderer)
+```
 
 
 
-## 事项
+## Other
 
 ### /img/
 
 twemoji svg来自[twitter: Emoji for everyone](https://github.com/twitter/twemoji)
 
-### /components/
+### vsc config for styl
 
-include pug 无需在build时编译文件
-
-### /templates/\*.pug，/404.pug，/css/\*.styl
-
-当html文件不存在的时候会重定向为pug，css同理
-
-可以直接在代码里使用.html和.css （include除外）
-
-
-
-## vsc插件配置
-
-额外推荐的vscode插件配置：
-
-Manta's Stylus Supremacy
+额外推荐的vscode插件Manta's Stylus Supremacy
 
 ```js
 "stylusSupremacy.insertColons": false, // 是否插入冒号
