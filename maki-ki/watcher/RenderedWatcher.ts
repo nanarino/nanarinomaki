@@ -134,7 +134,7 @@ export default class RenderedWatcher implements runInterface {
                         return
                     }
                     try {//捕获Pug模板引擎编译错误
-                        res.end(HTML.render(data404.toString('utf8')))
+                        res.end(await HTML.render(data404.toString('utf8')))
                     } catch (err) {
                         res.end((err as Error)?.toString?.())
                     }
