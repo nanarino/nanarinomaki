@@ -67,7 +67,10 @@ void async function main() {
         pugFileList = pathList.filter(name => name.match(/(\.pug$)|(\.html$)/) !== null)
     }
     for (let pugFile of pugFileList) {
-        let html = pugRenderSync(await readFile(path.join(cwd, pugFile)), { filename: './' })
+        let html = pugRenderSync(await readFile(path.join(cwd, pugFile)), {
+            basedir: path.resolve('./'),
+            filename: path.resolve('./index.pug')
+        })
         await writeFile(path.join(cwd, output, pugFile.replace(/\.pug$/, '.html')), html, { flag: 'w+' })
     }
 

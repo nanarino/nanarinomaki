@@ -57,7 +57,10 @@ const server = http.createServer(async (req, res) => {
             case ".pug":
                 data = await readFile(pathname)
                 try {//捕获Pug模板引擎编译错误
-                    data = pugRenderSync(data, { filename: './' })
+                    data = pugRenderSync(data, {
+                        basedir: path.resolve('./'),
+                        filename: path.resolve('./index.pug')
+                    })
                 } catch (err) {
                     data = err.toString()
                 }
@@ -132,7 +135,10 @@ const server = http.createServer(async (req, res) => {
                 return
             }
             try {//捕获Pug模板引擎编译错误
-                res.end(pugRenderSync(data404, { filename: './' }))
+                res.end(pugRenderSync(data404, {
+                    basedir: path.resolve('./'),
+                    filename: path.resolve('./index.pug')
+                }))
             } catch (err) {
                 res.end(err.toString())
             }
