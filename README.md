@@ -12,7 +12,8 @@
 npm run watch
 ```
 
-提供httpserver并临时编译与html和css同名的pug和styl
+提供httpserver并临时编译与html和css同名的pug和styl    
+pug只支持绝对路径的include；styl等不支持
 
 ### build
 
@@ -66,7 +67,7 @@ twemoji svg来自[twitter: Emoji for everyone](https://github.com/twitter/twemoj
 
 ```js
 "stylusSupremacy.insertColons": false, // 是否插入冒号
-"stylusSupremacy.insertSemicolons": false, // 是否插入分好
+"stylusSupremacy.insertSemicolons": false, // 是否插入分号
 "stylusSupremacy.insertBraces": false, // 是否插入大括号
 "stylusSupremacy.insertNewLineAroundImports": false, // import之后是否换行
 "stylusSupremacy.insertNewLineAroundBlocks": false, // 两个选择器中是否换行
