@@ -32,7 +32,7 @@ export default class RenderedWatcher implements runInterface {
         return http.createServer(async (req, res) => {
 
             req.url = req.url || ''
-            let pathname = path.join(process.cwd(), decodeURIComponent(req.url))
+            let pathname = path.join(process.cwd(), decodeURIComponent(req.url.split("?")[0]))
 
             if (path.extname(pathname) == "") {
                 pathname += "/";
