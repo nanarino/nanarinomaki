@@ -16,12 +16,12 @@ containerForCSS.register('renderInterface', {
     useClass: StylRenderer,
 })
 
-type renderType = 'HTML' | 'CSS'
+type renderOptKey = 'HTML' | 'CSS'
 
 export default class Containers {
     static HTML = container
     static CSS = containerForCSS
-    static override(type: renderType, renderer: constructor<renderInterface> | DelayedConstructor<renderInterface>) {
+    static override(type: renderOptKey, renderer: constructor<renderInterface> | DelayedConstructor<renderInterface>) {
         Containers[type].register('renderInterface', {
             useClass: renderer
         })
