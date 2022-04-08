@@ -59,6 +59,8 @@ Containers.CSS.resolve(Renderer)
 
 ### /img/
 
+![twemoji](./img/1f914.svg)
+
 twemoji svg来自[twitter: Emoji for everyone](https://github.com/twitter/twemoji)
 
 ### vsc config for styl
