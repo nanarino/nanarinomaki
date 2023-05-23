@@ -1,6 +1,6 @@
-# Maki-ki by nanari
+# ☘ 卷尺转换器
 
-简易的website打包工具
+`maki`意为`卷`：把 pug + stylus 编写的多页面输出到`dist`目录。不支持source-map哦。
 
 
 
