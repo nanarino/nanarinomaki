@@ -1,0 +1,29 @@
+{
+    "editor.tabSize": 4,
+    "stylusSupremacy.insertColons": false, // 是否插入冒号
+    "stylusSupremacy.insertSemicolons": false, // 是否插入分号
+    "stylusSupremacy.insertBraces": false, // 是否插入大括号
+    "stylusSupremacy.insertNewLineAroundImports": false, // import之后是否换行
+    "stylusSupremacy.insertNewLineAroundBlocks": false, // 两个选择器中是否换行
+    "[pug]": {
+        "editor.tabSize": 4,
+    },
+    "[stylus]": {
+        "editor.tabSize": 4,
+    },
+    "[sass]": {
+        "editor.tabSize": 4,
+    },
+    "[scss]": {
+        "editor.tabSize": 4,
+    },
+    "[less]": {
+        "editor.tabSize": 4,
+    },
+    "[typescript]": {
+        "editor.tabSize": 4,
+    },
+    "[javascript]": {
+        "editor.tabSize": 4,
+    }
+}
