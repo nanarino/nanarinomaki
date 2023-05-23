@@ -62,16 +62,3 @@ Containers.CSS.resolve(Renderer)
 ![twemoji](./img/1f914.svg)
 
 twemoji svg来自[twitter: Emoji for everyone](https://github.com/twitter/twemoji)
-
-### vsc config for styl
-
-额外推荐的vscode插件Manta's Stylus Supremacy
-
-```js
-"stylusSupremacy.insertColons": false, // 是否插入冒号
-"stylusSupremacy.insertSemicolons": false, // 是否插入分号
-"stylusSupremacy.insertBraces": false, // 是否插入大括号
-"stylusSupremacy.insertNewLineAroundImports": false, // import之后是否换行
-"stylusSupremacy.insertNewLineAroundBlocks": false, // 两个选择器中是否换行
-```
-
