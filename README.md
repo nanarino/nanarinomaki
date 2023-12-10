@@ -1,7 +1,6 @@
 # ☘ 卷尺转换器
 
-`maki`意为`卷`：把 pug + stylus 编写的多页面输出到`dist`目录。不支持source-map哦。
-
+自用的类gulp静态多页面生成器，`maki`意为`卷`，暂不支持source-map。
 
 
 ## Scripts
@@ -21,7 +20,7 @@ pug只支持绝对路径的include；styl等不支持
 npm run build
 ```
 
-提供编译以及替换后缀并可配置的拷贝到目标目录
+提供编译以及替换后缀并可配置的输出到目标目录
 
 
 
@@ -54,11 +53,10 @@ Containers.CSS.resolve(Renderer)
 ```
 
 
-
 ## Other
 
 ### /img/
 
-![twemoji](./img/1f914.svg)
-
 twemoji svg来自[twitter: Emoji for everyone](https://github.com/twitter/twemoji)
+
+<img src="./img/1f914.svg" width="96" alt="twemoji" />
